@@ -1,0 +1,14 @@
+load("expand_template.bzl", "expand_template")
+load("@rules_cc//cc:defs.bzl", "cc_library") 
+
+expand_template(
+    name = "expand_template",
+    template = "header.h.tpl",
+)
+
+# Headers only library
+cc_library(
+    name = "lib",
+    srcs = ["hello-lib.cc"],
+    hdrs = [":expand_template"],
+)
