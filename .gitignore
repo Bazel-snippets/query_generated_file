@@ -1,0 +1,40 @@
+*~
+
+# macOS files
+**/.DS_Store
+
+# idea project files
+**/.idea/*
+**/*.iml
+.reviewboardrc
+
+# vim swap files
+*.sw?
+
+# Python bytecode files
+*.pyc
+
+# Visual Studio Code files
+/.vscode/**
+
+# Visual Studio files
+/.vs/**
+
+# Ignore build folders
+/.build/**
+.teamcity/target
+
+# Bazel
+/bazel-*
+/.bazel
+/bazel/build_events.json
+.ijwb
+.clwb
+*.dot
+*.dgml
+/vs/**
+*.tmp
+/*.log
+*.bzlc
+/bazel/bazelrc-repository-overrides
+/repositories
